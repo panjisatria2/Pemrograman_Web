@@ -1,10 +1,7 @@
 <x-layout>
     <x-slot:title>{{ $title }}</x-slot>
-
-        {{-- Card --}}
-        @include('components.card')
-
-        {{-- alerts --}}
-        @include('components.alerts')
-
 </x-layout>
+
+<x-card></x-card>
+
+    <x-alerts></x-alerts>
