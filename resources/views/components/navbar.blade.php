@@ -21,12 +21,12 @@
                             Categories
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/category/pria">Pria</a></li>
-                            <li><a class="dropdown-item" href="/category/wanita">Wanita</a></li>
+                            <li><a class="dropdown-item" href="/category/Pakaian Pria">Pria</a></li>
+                            <li><a class="dropdown-item" href="/category/Pakaian Wanita">Wanita</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="/category/anak-anak">Anak-Anak</a></li>
+                            <li><a class="dropdown-item" href="/category/Pakaian Anak-Anak' ">Anak-Anak</a></li>
                         </ul>
                     </li>
                 </ul>
