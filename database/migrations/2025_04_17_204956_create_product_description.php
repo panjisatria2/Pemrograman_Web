@@ -26,7 +26,7 @@ return new class extends Migration
                 ->onDelete('set null')
                 ->onUpdate('cascade');
             $table->string('image_url')->nullable();
-            $table->boolean('is_active',true)->nullable();
+            $table->boolean('is_active')->nullable();
             $table->timestamps();
         });
     }

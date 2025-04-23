@@ -5,7 +5,7 @@ use Livewire\Volt\Volt;
 use App\Http\Controllers\HomepageController;
 
 
-Route::get('/', [HomepageController::class, 'index']);
+Route::get('/', [HomepageController::class, 'index'])->name('home');
 Route::get('products', [HomepageController::class, 'products']);
 Route::get('product/{slug}', [HomepageController::class, 'product']);
 Route::get('categories',[HomepageController::class, 'categories']);
