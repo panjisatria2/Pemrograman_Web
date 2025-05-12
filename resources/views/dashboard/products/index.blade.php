@@ -13,7 +13,7 @@
         <flux:badge color="red">{{ $errors->first() }}</flux:badge>
     @endif
 
-    // Search and Add New Product Button
+    <!-- Search and Add New Product Button -->
     <div class="flex justify-between items-center mb-4">
         <div>
             <flux:input icon="magnifying-glass" placeholder="Search Products" />

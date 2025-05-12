@@ -12,7 +12,7 @@
         <!-- Textarea for product description -->
         <flux:textarea label="Description" name="description" required class="mb-3" /> 
         <!-- Input for product price -->
-        <flux:input label="Price" name="price" type="number" required class="mb-3" /> //
+        <flux:input label="Price" name="price" type="number" required class="mb-3" /> 
 
         {{-- Toggle Input Type: File or URL --}}
         <div class="mb-3">
