@@ -5,6 +5,7 @@
         <flux:separator variant="subtle" />
     </div>
 
+    <!-- Display success or error messages -->
     @if(session()->has('success'))
         <flux:badge color="lime">{{ session('success') }}</flux:badge>
     @endif
@@ -12,6 +13,7 @@
         <flux:badge color="red">{{ $errors->first() }}</flux:badge>
     @endif
 
+    // Search and Add New Product Button
     <div class="flex justify-between items-center mb-4">
         <div>
             <flux:input icon="magnifying-glass" placeholder="Search Products" />
@@ -24,6 +26,7 @@
         </div>
     </div>
 
+    <!-- Product Table -->
     <div class="overflow-x-auto rounded-lg shadow bg-white">
         <table class="min-w-full divide-y divide-gray-200">
             <thead class="bg-gray-50">

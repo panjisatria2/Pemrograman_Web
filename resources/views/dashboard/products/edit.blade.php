@@ -9,8 +9,11 @@
         @csrf
         @method('PUT')
 
+        <!-- Input for product name -->
         <flux:input label="Name" name="name" value="{{ old('name', $product->name) }}" required class="mb-3" />
+        <!-- Textarea for product description -->
         <flux:textarea label="Description" name="description" required class="mb-3">{{ old('description', $product->description) }}</flux:textarea>
+        <!-- Input for product price -->
         <flux:input label="Price" name="price" type="number" value="{{ old('price', $product->price) }}" required class="mb-3" />
 
         {{-- Image Source Toggle --}}
@@ -24,10 +27,12 @@
             </label>
         </div>
 
+        <!-- File input for image upload -->
         <div id="image-file-input" class="mb-3">
             <flux:input label="Image (Upload)" name="image_file" type="file" />
         </div>
 
+        <!-- URL input for image -->
         <div id="image-url-input" class="mb-3 hidden">
             <flux:input label="Image (URL)" name="image_url" type="text" value="{{ old('image_url', $product->image ?? '') }}" />
         </div>
@@ -39,6 +44,7 @@
     </form>
 
     <script>
+        // Function to toggle between file input and URL input 
         function toggleImageInput() {
             const source = document.querySelector('input[name="image_source"]:checked').value;
             document.getElementById('image-file-input').classList.toggle('hidden', source !== 'file');

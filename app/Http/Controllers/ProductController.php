@@ -86,6 +86,7 @@ class ProductController extends Controller
         return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
     }
 
+    // Menampilkan detail produk
     public function show(string $id)
     {
         $product = Product::find($id);
